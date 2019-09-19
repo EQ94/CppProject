@@ -2,3 +2,6 @@ CppProject 记录工程开发中学到的一些技巧
 
 RegisterClass
 注册并保存类对象
+
+DesignModel_Singleton
+单例模式学习（static, magic static, singleton, lazy model）
