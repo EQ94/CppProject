@@ -1,4 +1,5 @@
 // ×îÍÆ¼öµÄµ¥ÀýÄ£Ê½¡ª¡ª¾Ö²¿¾²Ì¬±äÁ¿(magic static)
+// ¿¿¿¿¿¿¿¿¿--¿¿¿¿¿¿(magic static)
 #include<iostream>
 
 class Singleton {
