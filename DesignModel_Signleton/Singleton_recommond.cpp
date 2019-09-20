@@ -1,20 +1,20 @@
-// ×îÍÆ¼öµÄÀÁººÊ½µ¥Àý¡ª¡ª¾Ö²¿¾²Ì¬±äÁ¿
+// ¿¿¿¿¿¿¿¿¿--¿¿¿¿¿¿(magic static)
 #include<iostream>
 
 class Singleton {
 public:
 	~Singleton() {
-		std::cout << "Singleton destruct called!" << std::endl;
+	    std::cout << "Singleton destruct called!" << std::endl;
 	}
 	Singleton(const Singleton&) = delete;
 	Singleton& operator=(const Singleton&) = delete;
 	static  Singleton& get_instance() {
-		static Singleton instance;
-		return instance;
+	    static Singleton instance;
+	    return instance;
 	}
 private:
 	Singleton() {
-		std::cout << "Singleton construct called!" << std::endl;
+	    std::cout << "Singleton construct called!" << std::endl;
 	}
 };
 
