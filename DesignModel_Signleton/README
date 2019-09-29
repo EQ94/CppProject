@@ -50,3 +50,17 @@ https://www.cnblogs.com/sunchaothu/p/10389842.html
 https://www.cnblogs.com/loveis715/archive/2012/07/18/2598409.html
 
 https://stackoverflow.com/questions/246564/what-is-the-lifetime-of-a-static-variable-in-a-c-function
+
+
+
+
+结论： 
+1.static成员函数不包含this指针 
+2.static成员函数不能为virtual 
+3.不能存在static和non-static成员函数有相同的名字和参数 
+4.static 成员函数不能被声明成const、volatile或者const volatile。
+
+原因： 
+const成员函数用来修饰该成员函数的隐式this指针为const型，而static成员函数不包含this指针。
+
+原文链接：https://blog.csdn.net/zhangxiao93/article/details/74502504
