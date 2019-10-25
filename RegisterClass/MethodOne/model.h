@@ -44,7 +44,7 @@ public:
 	ModelFactoryMap model_factory_map_;
 };
 
-static ModelRegistry* GlobalModelRegistry0;	// 引发读访问权限冲突
+// static ModelRegistry* GlobalModelRegistry0;	// 引发读访问权限冲突
 ModelRegistry* GlobalModelRegistry();
 
 class ModelHelper {
