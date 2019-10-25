@@ -1,0 +1,21 @@
+vector<bool> 问题：
+
+总结：
+避免使用vector<bool>
+1. vector<bool>不是标准容器，因为标准容器的对于 T *p = &c[0]必须是可编译的。【T 为模板参数】
+2. vector<bool> 并不是以单个元素为bool来存储的。
+在底层实现中，vector<bool>为了节省空间，bool并不是真的以单个字节来存储，而是通过位bit来表示，一个位用一个bool表示
+
+vector不满足STL容器的必要条件，最好不要使用他，而deque和bitset是基本能满足对vector<bool>提供的性能的需要的替代数据结构
+
+vector<bool>不是标准容器，不符合 T *p = &c[0], 返回的是一个引用代理，究其原因是底层内部使用了压缩位数来表达bool，借助引用来模拟返回的是一个bool字节。。
+
+
+
+
+参考：
+https://www.cnblogs.com/wpcockroach/p/3179572.html
+
+https://www.cnblogs.com/yfceshi/p/6869533.html
+
+https://www.cnblogs.com/liangjf/p/10275020.html
